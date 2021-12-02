@@ -1,3 +1,14 @@
+/* QUI CLASSI DEBUG */
+body {
+    background-color: red;
+}
+/* QUI CLASSI DEBUG */
+
+
+
+
+/* STILI GENERALI DELLA PAGINA */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +17,74 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+
+/* Clearfix */
+
+.clearfix::after {
+    content: "";
+    clear:both;
+    display: table;
+}
+
+/* Elementi di stile comuni a tutte le liste */
+
+ul {
+    list-style: none;
+}
+
+/* Elementi di stile comuni a tutti i link */
+
+li a {
+    text-decoration: none;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+/* STILIZZAZIONE HEADER E ELEMENTI INTERNI */
+
+header {
+    background-color: #fff;
+}
+
+/* Parte destra e sinistra di nav */
+
+header nav .left {
+    float:left;
+}
+
+header nav .right {
+    float:right;
+
+}
+
+/* Elementi della lista di nav in riga */
+nav ul li {
+    display: inline-block;
+}
+
+
+/* Aumento area del link e stilizzazione testo */
+nav ul li a{
+    display: inline-block;
+    height: 100%;
+    margin: 0 1em;
+    padding: 2em 1em;
+    color: #000;
+    border-bottom: 5px solid #fff;
+}
+
+/* Elemento unico di hover nel nav */
+nav ul li a:hover{
+    border-bottom: 5px solid #0061FF;
+}
+
+/* Allineamento verticale e stilizzazione logo */
+#logo {
+    vertical-align: middle;
+    padding-left: 2em;
 }
