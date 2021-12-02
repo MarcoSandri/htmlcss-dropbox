@@ -21,12 +21,33 @@ body {
     font-size: 1.125em;
 }
 
-/* Clearfix */
+h1 {
+    font-size: 5.75em;
+    margin-bottom: 0.5em;
+}
+
+p{
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    max-width: 45ch;
+}
+
+
+/* Clearfix e destra e sinistra*/
 
 .clearfix::after {
     content: "";
     clear:both;
     display: table;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+
 }
 
 /* Elementi di stile comuni a tutte le liste */
@@ -51,29 +72,26 @@ a.btn {
     background-color: #0061FF;
     color: #fff ;
     padding: 0.5em 1.125em;
-    font-weight: 400;
+    font-weight: 600;
+    transition-duration: 0.4s;
 }
 
 .btn:hover {
-
+    background-color: #297AFE;
 }
 
 /* STILIZZAZIONE HEADER E ELEMENTI INTERNI */
 
 header {
-    background-color: #fff;
+    background-color: #b4d0e7;
 }
 
-/* Parte destra e sinistra di nav */
-
-header nav .left {
-    float:left;
+header nav {
+    position:sticky;
+    background-color: #ffff;
+    top:0;
 }
 
-header nav .right {
-    float:right;
-
-}
 
 /* Elementi della lista di nav in riga */
 nav ul li {
@@ -100,4 +118,39 @@ nav ul li a:not(.btn):hover{
 #logo {
     vertical-align: middle;
     padding-left: 2em;
+}
+
+
+/* Stilizzazione jumbotron */
+
+.jumbotron {
+    width: 85%;
+    margin:auto;
+    padding: 6em 0;
+}
+
+.desc {
+    width: 40%;
+}
+
+.jumbotron .img-container {
+    width:60%;
+    position:relative;
+}
+
+.img-container img{
+    width:100%;
+    position:absolute;
+}
+
+.desc .thinner {
+    display: block;
+    margin: 1em 0;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.desc .fa-arrow-down {
+    margin-top: 1em;
+    font-size: 3em;
 }
