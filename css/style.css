@@ -45,6 +45,19 @@ a.btn {
     text-decoration: none;
 }
 
+/* Bottoni */
+
+.btn {
+    background-color: #0061FF;
+    color: #fff ;
+    padding: 0.5em 1.125em;
+    font-weight: 400;
+}
+
+.btn:hover {
+
+}
+
 /* STILIZZAZIONE HEADER E ELEMENTI INTERNI */
 
 header {
@@ -78,8 +91,8 @@ nav ul li a{
     border-bottom: 5px solid #fff;
 }
 
-/* Elemento unico di hover nel nav */
-nav ul li a:hover{
+/* Elemento unico di hover nel nav --- tranne che per il bottone */
+nav ul li a:not(.btn):hover{
     border-bottom: 5px solid #0061FF;
 }
 
