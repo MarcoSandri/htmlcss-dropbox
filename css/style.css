@@ -410,7 +410,7 @@ section.partner .right {
 .square-small svg,
 .square-small img {
     vertical-align: middle;
-    fill: #fff;
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(164deg) brightness(101%) contrast(103%);
     width: 60%;
 }
 
