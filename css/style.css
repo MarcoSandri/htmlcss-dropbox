@@ -26,22 +26,30 @@ body {
     margin: auto;
 }
 
+section {
+    margin-bottom: 10em;
+}
+
 h1 {
+    text-align: left;
     font-size: 5.75em;
     margin-bottom: 0.5em;
 }
 
 h2 {
+    text-align: left;
     font-size: 3em;
     margin-bottom: 0.5em;
 }
 
 h3 {
+    text-align: left;
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
 
 p{
+    text-align: left;
     font-size: 1.2em;
     margin-bottom: 2em;
     max-width: 45ch;
@@ -100,6 +108,20 @@ a {
     text-align: center;
     width: 100%;
     margin-bottom: 2em;
+}
+
+.btn--alt {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.btn--lg {
+    background-color: #d3d3d3;
+}
+
+.btn.btn--alt:hover {
+    background-color: #d3d3d3;
 }
 
 .btn:hover {
@@ -224,7 +246,7 @@ main {
     padding-right: 1em;
 }
 
-/* Sezioni piani */
+/* Sezioni offerte */
 
 .plans .box {
     background-color: #fff;
@@ -310,3 +332,18 @@ ul.fa-ul li{
 .full .info .right {
     width: 25%;
 }
+
+/* SEZIONE PARTNER */
+
+section.partner .left {
+    width: 60%;
+}
+
+section.partner .left img{
+    width: 100%;
+}
+
+section.partner .right {
+    width: calc(40% - 4em);
+}
+
