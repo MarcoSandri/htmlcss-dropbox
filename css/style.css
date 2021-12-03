@@ -484,23 +484,17 @@ section.partner .right {
 }
 
 .faq-box {
-    padding-top: 2em;
     border-bottom: 1px solid lightgray;
 }
 
-.faq-box .answer {
+.question {
     padding: 2em 0;
 }
-
-.question .fa-chevron-down {
-    padding: 2em 0;
-}
-
 
 /* Footer */
 
 footer {
-    background-color: #0E0E0E;
+    background-color: #000000;
     color:white;
     padding: 5em 0;
 }
@@ -514,7 +508,7 @@ footer {
 
 footer .footer-list ul {
     padding-right: 0;
-    margin-right: 3em;
+    margin-right: 8em;
 }
 
 footer .footer-list ul li {
@@ -525,4 +519,61 @@ footer div.white-line {
     width: 200px;
     margin: 2em 0;
     border-bottom:1px solid white;
+}
+
+footer .language {
+    color:lightgray;
+    font-size: 0.9em;
+}
+
+
+
+/* BONUS */
+
+/* FAQ */
+
+.answer {
+    display:none;
+
+}
+
+.answer p{
+    padding-top:2em;
+}
+
+.question:hover{
+    cursor: pointer;
+}
+
+.question:hover .answer{
+    display:block
+}
+
+/* MENU DROPDOWN */
+
+#support{
+    position:relative;
+}
+
+#support:hover #drop{
+    display:block
+}
+
+#drop {
+    display: none;
+    position:absolute;
+    background:white;
+
+}
+
+#drop li {
+    display:block;
+    padding: 1em 5em 1em 1em;
+    border-bottom: 3px solid white;
+}
+
+#drop li:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #0061FF;
+    background-color: lightgray;
 }
