@@ -112,7 +112,7 @@ header {
     background-color: #b4d0e7;
 }
 
-header nav {
+nav {
     position:sticky;
     z-index: 999;
     background-color: #ffff;
