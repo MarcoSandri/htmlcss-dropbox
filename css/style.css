@@ -1,8 +1,8 @@
-/* QUI CLASSI DEBUG */
-body {
-    background-color: red;
-}
-/* QUI CLASSI DEBUG */
+/* SOTTO CLASSI DEBUG */
+
+/*   */
+
+/* SOPRA CLASSI DEBUG */
 
 
 
@@ -21,8 +21,23 @@ body {
     font-size: 1.125em;
 }
 
+.wrapper {
+    width: 70%;
+    margin: auto;
+}
+
 h1 {
     font-size: 5.75em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
     margin-bottom: 0.5em;
 }
 
@@ -66,6 +81,10 @@ a.btn {
     text-decoration: none;
 }
 
+a {
+    color: #0061FF;
+}
+
 /* Bottoni */
 
 .btn {
@@ -74,6 +93,13 @@ a.btn {
     padding: 0.5em 1.125em;
     font-weight: 600;
     transition-duration: 0.4s;
+}
+
+.btn--expanded {
+    display:block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 .btn:hover {
@@ -127,7 +153,7 @@ nav ul li a:not(.btn):hover{
 .jumbotron {
     width: 85%;
     margin:auto;
-    padding: 6em 0;
+    padding: 7em 0;
 }
 
 .desc {
@@ -154,4 +180,133 @@ nav ul li a:not(.btn):hover{
 .desc .fa-arrow-down {
     margin-top: 1em;
     font-size: 3em;
+}
+
+/* FINE HEADER */
+
+/* Elementi main */
+
+main {
+    margin: 15em 0 10em;
+}
+
+
+/* Radio button */
+.radio::before {
+    box-sizing: border-box;
+    content: "";
+    display: inline-block;
+    height: 1.3em;
+    width: 1.3em;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    vertical-align: middle;
+    cursor:pointer;
+}
+
+.radio--checked::before {
+    box-sizing: border-box;
+    content: "";
+    display: inline-block;
+    height: 1.3em;
+    width: 1.3em;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 6px solid #0061FF;
+    vertical-align: middle;
+    cursor:pointer;
+}
+
+.radio,
+.radio--checked {
+    line-height: 1.3em;
+    padding-right: 1em;
+}
+
+/* Sezioni piani */
+
+.plans .box {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Margini diversi per ogni rettangolo */
+.plans .box.third:nth-child(1) {
+    margin-right: 2em;
+}
+
+.plans .box.third:nth-child(2) {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.plans .box.third:nth-child(3) {
+    margin-left: 2em;
+}
+
+/* Dimensioni colonne */
+.third {
+    width: calc((100% - 8em) / 3 );
+    min-height: 1300px;
+}
+
+.full {
+    width: 100%;
+}
+
+.box .title{
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.box .info {
+    padding: 1.5em;
+}
+
+
+span.gray {
+    display: block;
+    margin: 1em 0;
+    color: #808080;
+}
+
+
+/* Font awesome ul list */
+ul.fa-ul{
+    font-size: 0.975em;
+    margin-left: 1.5em;
+    list-style-position: inside;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+ul.fa-ul li{
+    margin-bottom: 1.2em;
+}
+
+.border {
+    border-bottom: 1px solid #d3d3d3;
+    width: 4em;
+    margin: 2em 0;
+}
+
+.fa-check {
+    color:#0061FF;
+}
+
+/* Dimensioni riga */
+.full .info .left {
+    width: 75%;
+}
+
+.full .info .left div {
+    margin-top: 2em;
+}
+
+.full .info .right {
+    width: 25%;
 }
