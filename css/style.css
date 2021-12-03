@@ -376,4 +376,37 @@ section.partner .right {
 }
 
 
-/*  */
+/* Sezione partner */
+
+.partner h2 {
+    max-width: 25ch;
+}
+
+.teams-container {
+    height: calc(100vw / 3.5);
+}
+
+.square-container {
+    height: calc(100vw / 3.5);
+    width: calc(100vw / 3.5);
+}
+
+.square-small {
+    background-color: lightskyblue;
+    height: calc(100vw / 7);
+    width: calc(100vw / 7);
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+
+
+.test {
+    background-color: lightgrey;
+    box-sizing: border-box;
+    border:3px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+}
