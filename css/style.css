@@ -44,6 +44,12 @@ h2 {
 
 h3 {
     text-align: left;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    text-align: left;
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
@@ -83,6 +89,7 @@ ul {
 
 li a {
     text-decoration: none;
+    color: #fff;
 }
 
 a.btn {
@@ -120,8 +127,9 @@ a.a--alt {
     color: #000;
 }
 
-.btn--lg {
-    background-color: #d3d3d3;
+.btn--wht {
+    background-color: #fff;
+    color: #000;
 }
 
 .btn.btn--alt:hover {
@@ -376,37 +384,145 @@ section.partner .right {
 }
 
 
-/* Sezione partner */
+/* Sezione sponsor */
 
-.partner h2 {
+.sponsor h2 {
     max-width: 25ch;
 }
 
-.teams-container {
-    height: calc(100vw / 3.5);
+.teams {
+    margin-top: 2em;
 }
 
-.square-container {
-    height: calc(100vw / 3.5);
-    width: calc(100vw / 3.5);
+.teams-container .square-container {
+    height: 30vw;
+    width: 30vw;
 }
 
 .square-small {
-    background-color: lightskyblue;
-    height: calc(100vw / 7);
-    width: calc(100vw / 7);
+    height: 15vw;
+    width: 15vw;
+    line-height: 15vw;
+    text-align: center;
     box-sizing: border-box;
-    border: 5px solid black;
+}
+
+.square-small svg,
+.square-small img {
+    vertical-align: middle;
+    fill: #fff;
+    width: 60%;
+}
+
+.square-big {
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    height: 30vw;
+    width: calc(100% - 60vw);
+    overflow-y: scroll;
+    padding: 2em;
+}
+
+.square-big img {
+    width: 30%;
+}
+
+/* Stili quadratini sponsor */
+#designit {
+    background-color: #A2D39B;
+    border: 10px solid #D0E9CD;
+}
+
+#asu {
+    background-color: #61082B;
+}
+
+#uf {
+    background-color: #0093CE;
+}
+
+#topps {
+    background-color: #FF1C1C;
+}
+
+#hearst {
+    background-color: #B4D0E7;
+}
+
+#wbr {
+    background-color: #D5001F;
+}
+
+#cc {
+    background-color: #FFD830;
+}
+
+#lp {
+    background-color: #0D2481;
+}
+
+/* CTA */
+
+.cta {
+    padding: 10em 0;
+    background-color: #B4D0E7;
+}
+
+.cta h2.left {
+    width: 70%;
+    color: #61082B;
+}
+
+.cta a.btn.right {
+    width:30%;
+}
+
+/* Sezione faq */
+.faq h3{
+    padding: 2em 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.faq-box {
+    padding-top: 2em;
+    border-bottom: 1px solid lightgray;
+}
+
+.faq-box .answer {
+    padding: 2em 0;
+}
+
+.question .fa-chevron-down {
+    padding: 2em 0;
 }
 
 
-.test {
-    background-color: lightgrey;
-    box-sizing: border-box;
-    border:3px solid red;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 100%;
+/* Footer */
+
+footer {
+    background-color: #0E0E0E;
+    color:white;
+    padding: 5em 0;
+}
+
+/* Centratura orizzontale contenuto */
+.footer-wrapper {
+    width: 85%;
+    margin: auto;
+    padding-top: 2em;
+}
+
+footer .footer-list ul {
+    padding-right: 0;
+    margin-right: 3em;
+}
+
+footer .footer-list ul li {
+    margin-bottom: 1em;
+}
+
+footer div.white-line {
+    width: 200px;
+    margin: 2em 0;
+    border-bottom:1px solid white;
 }
