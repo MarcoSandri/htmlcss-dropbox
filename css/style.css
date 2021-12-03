@@ -18,7 +18,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 1.125em;
+    font-size: 1em;
 }
 
 .wrapper {
@@ -91,6 +91,10 @@ a.btn {
 
 a {
     color: #0061FF;
+}
+
+a.a--alt {
+    color:#000;
 }
 
 /* Bottoni */
@@ -347,3 +351,29 @@ section.partner .right {
     width: calc(40% - 4em);
 }
 
+/* Sezione operazioni */
+
+/* Margini diversi per ogni carta */
+.row .card{
+    width: calc((100% - 8em ) / 3);
+}
+
+.row .card img{
+    width: 100%;
+}
+
+.row .card:nth-child(1) {
+    margin-right: 2em;
+}
+
+.row .card:nth-child(2) {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.row .card:nth-child(3) {
+    margin-left: 2em;
+}
+
+
+/*  */
